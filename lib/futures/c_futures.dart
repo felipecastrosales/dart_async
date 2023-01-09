@@ -25,4 +25,6 @@ void main() {
       print('Future(() { ... }).whenComplete(() => print(completed))');
     },
   );
+
+  print(value);
 }
