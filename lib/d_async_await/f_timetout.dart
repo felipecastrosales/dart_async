@@ -13,6 +13,8 @@ void main() {
 
   try {
     final awaiting = insertingAnythingMoreSlow().timeout(Duration(seconds: 2));
+    print('DateTime2: ${DateTime.now().toIso8601String()}');
+    print(awaiting);
   } on TimeoutException catch (error) {
     print('Finish with error $error');
   }
